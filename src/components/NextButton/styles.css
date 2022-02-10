@@ -1,19 +1,19 @@
 .button {
-    width: 100%;
-    background: white;
-    color: grey;
-    border: none;
-    padding: 15px 30px;
-    cursor: pointer;
-    transition: color 1000ms, background-color 250ms;
+  width: 100%;
+  background: white;
+  color: grey;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: color 1000ms, background-color 250ms;
 }
 
 .button:hover {
-    background-color: rgb(141, 151, 153);
-    color: rgb(95, 179, 218);
+  background-color: rgb(141, 151, 153);
+  color: rgb(95, 179, 218);
 }
 .button:disabled {
-    background: grey;
-    color:rgb(150, 150, 150);
-    cursor: default;
+  background: grey;
+  color:rgb(150, 150, 150);
+  cursor: default;
 }

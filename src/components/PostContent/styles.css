@@ -1,14 +1,14 @@
 .post-content {
-    background-color: white;
-    box-shadow: 1px, rgb(73, 73, 73);
-    transition: transform 100ms ease-in-out;
+  background-color: white;
+  box-shadow: 1px, rgb(73, 73, 73);
+  transition: transform 100ms ease-in-out;
 }
 .post-content:hover{
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 .post-content img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .post-card {
-    padding: 0 18px 18px 18px;
+  padding: 0 18px 18px 18px;
 }
