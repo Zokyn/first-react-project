@@ -12,7 +12,7 @@ export const Home = () => {
   const [posts, setPosts] = useState([]);
   const [allPosts, setAllPosts] = useState([]);
   const [searchValue, setSearchValue] = useState('');
-  const [postsPerPage] = useState(10);
+  const [postsPerPage] = useState(2);
 
   const noMorePosts = page + postsPerPage >= allPosts.length;
 
@@ -52,7 +52,7 @@ export const Home = () => {
     <section className="container">
       <div className="search-container">
         <SearchInput value={searchValue} event={handleChange} />
-        {!!searchValue && <h3>{searchValue}</h3>}
+        {/* {!!searchValue && <h3>{searchValue}</h3>} */}
       </div>
 
       <div>

@@ -16,9 +16,7 @@ describe('<Button />', () => {
     const fn = jest.fn();
     render(<NextButton text="Load more posts" onClick={fn} />);
 
-    const button = screen.getByRole('button', { name: /load more posts/i });
-
-    userEvent.click(button);
+    userEvent.click(screen.getByRole('button', { name: /load more posts/i }));
     expect(fn).toHaveBeenCalledTimes(1);
   });
 
@@ -26,8 +24,6 @@ describe('<Button />', () => {
     const fn = jest.fn();
     render(<NextButton text="Load more posts" onClick={fn} disabled={false} />);
 
-    const button = screen.getByRole('button', { name: /load more posts/i });
-
-    expect(button).toBeEnabled();
+    expect(screen.getByRole('button', { name: /load more posts/i })).toBeEnabled();
   });
 });
